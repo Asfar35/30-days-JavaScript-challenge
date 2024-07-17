@@ -1,4 +1,4 @@
-//Activity 4: Higher-Order Function
+//Activity 5: Higher-Order Function
 //Task:09
 function callFunctionNTimes(fun, n) {
     for (let i = 0; i < n; i++) {
