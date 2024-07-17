@@ -1,9 +1,9 @@
-//Activity 4: Higher-Order Function
+//Activity 5: Higher-Order Function
 //Task:10
-function valRes(val, res) {
-    const value = val();
+function valRes(val, res, a) {
+    const value = val(a);
     return "Your result is " + res(value);
 }
-const getVal = () => 30;
-const calRes = (val) => (val * 2);
-console.log(valRes(getVal, calRes)); 
+const addVal = (val) => (val + 2);
+const getRes = (val) => val;
+console.log(valRes(addVal, getRes, 1)); 
